@@ -7,6 +7,7 @@ The Seattle area is one of the most expensive real estate markets in the United 
 The scope of this project is to determine what factors most impact price.  This information is valuable to anyone looking to assess an entry into the Seattle real estate market.  This could either be an investor or potential resident.  I would love to move out of Iowa and break in to the Seattle market.
 
 Here is a link to my presentation:  https://www.dropbox.com/sh/n6u8r8c60a5poxm/AAAlIbAcv6OO_jTLsUk-x3Vga?dl=0
+Here is a link to my blog: https://medium.com/p/dc29206cf25/edit
 
 ## The Data Provided
 
