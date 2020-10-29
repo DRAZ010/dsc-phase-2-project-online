@@ -4,7 +4,7 @@ Date: 10/2020
 
 ## Introduction
 The Seattle area is one of the most expensive real estate markets in the United States. 
-The scope of this project is to determine what factors most impact price.  This information is valuable to anyone looking to assess an entry into the Seattle real estate market.  This could either be an investor or potential resident.  I would love to move out of Iowa and break in to the Seattle market at some point in my life!  
+The scope of this project is to determine what factors most impact price.  This information is valuable to anyone looking to assess an entry into the Seattle real estate market.  This could either be an investor or potential resident.  I would love to move out of Iowa and break in to the Seattle market.
 
 ## The Data Provided
 
@@ -13,7 +13,7 @@ Here is the data provided by the flatiron school relating to the real estate in 
  * The price the property sold at
  * The number of bedrooms and bathrooms
  * Square footage information
- * If it the property has aview of the waterfront
+ * Ifthe property has a view of the waterfront
  * What the condition and grade the property is in
  * When the property was built and if/when it had been renovated
  * The latitude and logitude of each property
@@ -36,21 +36,21 @@ Here is the data provided by the flatiron school relating to the real estate in 
 ### Where are the most expensive places to live?
 Let's face it, most of us have budget constraints.  An old cliche comes to mind: the three most important factors when considering real-esate are location, location and location!  As I was provided pricing and longitude and latitude data it was simply a function of overlaying price on top of the location data.  Here is graph:
 
-[Imgur](https://i.imgur.com/3rmFEhI.png)
+![Imgur](https://i.imgur.com/3rmFEhI.png)
 
-In order to get some context here is a map of the King Country with zip codes included.
+For context, here is a map of the King Country with zip codes included.
 
-[Imgur](https://i.imgur.com/A0SciBt.png)
+![Imgur](https://i.imgur.com/A0SciBt.png)
 
 As you can see the most expensive real estate is clustered around Lake Washington.  Specifically prices are highest in the following zip codes 98033, 98039, 98004 and 98040.  
 
-Conclusion:  So we can conclude that these locations have more desirable attributes given their higher prices.
+Conclusion:  So we can infer that these locations have more desirable attributes given their higher prices. 
 
 ### How strong is the relationship between price and the bedroom/bathroom ratio?
 
-It would be nice if I didn't have to share a bathroom with someone. So naturally the question is, How much more to I have to spend for each additional bathroom per bedroom.  Here is how the relationship looks graphically:
+It would be nice if I didn't have to share a bathroom with someone. So naturally the question is, how much more to I have to spend for each additional bathroom per bedroom.  Here is how the relationship looks graphically:
 
-[Imgur](https://i.imgur.com/X1E3We9.png)
+![Imgur](https://i.imgur.com/X1E3We9.png)
 
 As expected as the bed/bath ratio climbs the price of the property tends to be lower.  To confirm this mathematically, I did a quick correlation calculation:  -0.23  
  
@@ -58,9 +58,9 @@ Conclusion:  There is a negative but not strong relationship between price and t
 
 ### Which variable most impact price?
 
-So now that we have estatablish that there is a fairly weak relationship between price and the number of bedrooms that share a bathroom, let's look at which variables in the data have the strongest relationship to price.  Perhaps the most concise way to look at how all the variables are related is with a correlation matrix.  I narrowed the matrix down to variables with at least a correlation absolute value of 0.2. Here is a result:
+We have estatablish that there is a dicernable relationship between price and location and a fairly weak relationship between price and the number of bedrooms that share a bathroom. Let's directly look at which variables in the data have the strongest relationship to price.  Perhaps the most concise way to look at how all the variables are related is with a correlation matrix.  I narrowed the matrix down to variables with at least a correlation absolute value of 0.2. Here is a result:
 
-[Imgur](https://i.imgur.com/t6FLbxO.png)
+![Imgur](https://i.imgur.com/t6FLbxO.png)
 
 Conclusion:  It looks like grade has the highest impact on price with a correlation of 0.63.  There really isn't anything surprising about the directional correlation between each variable but the strength or absolute value of the correlation will help select predictive variables in a regression model.  It is also important to consider cross correlations in order to avoid multicollinearity.
 
@@ -90,7 +90,7 @@ As grade has the strongest relationship I looked into the King County grading sy
 
 ## Linear Regression
 
-The rubric of our second project at flatiron included linear regression. This is a precursor to machine learning later in the boot camp and a good skill to hone in business.  The model enables one to predict price, in this case, if you know a few of the underlying variables.  Out of the data provided I had to narrow the independent variables down to reduce the impact of multicollinearity.
+The rubric of our second project at flatiron included linear regression. This is a precursor to machine learning later in the bootcamp and a good skill to hone in business.  The model enables one to predict price, in this case, if you know a few of the underlying variables.  Out of the data provided I had to narrow the independent variables down to reduce the impact of multicollinearity.
 
 As mentioned the predicted or dependent variable is price.  The predictive or independent variables are as follows:
 * Grade
@@ -99,5 +99,5 @@ As mentioned the predicted or dependent variable is price.  The predictive or in
 
 Here are the model results which inlclude the coefficients needed to establish the predictive regression model:
 
-[Imgur](https://i.imgur.com/tGUgj8l.png)
+![Imgur](https://i.imgur.com/tGUgj8l.png)
 
