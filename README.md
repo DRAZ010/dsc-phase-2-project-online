@@ -101,13 +101,21 @@ Here are the model results which inlclude the coefficients needed to establish t
 
 ![Imgur](https://i.imgur.com/tGUgj8l.png)
 
+Model Conclusions:
+* All P values are low indicating that each variable is significant.  
+* A coefficient of determination, or R-squared, at 87% indicates a highly predictive model.
+* In other words 87% of the variation in dependent variables are explained by the independent variables.
+* A Durbin-Watson of 2 means that there is no autocorrelation amongst the residuals.
+* The high Jarque-Bera indicates that the residuals are not normally distributed which is an issue.
+* Based on q-q plot, significant heteroskedasticity exists. The residuals vary with price. There is more noise in the model as price increases.
 
 ## Further Research
 Here are some issues that I would like to further explore if given the time and data required:
-* A look at pricing data through time at each propriety toget an idea of what metrics impact price over time.  The current data provided is only a snaposhot in time. Time series data would better enable an investor to identify trends
-* Demographic data to look for areas most attractive to young professionals, the elderly and families
-* How each school disctrict impacts the relative value of homes
-* Proposals to address ffordabilite housing and gentrification issues
+* A look at pricing data through time at each propriety to assess price changes through time.  The current data provided is only a snaposhot in time. Time series data would better enable an investor to identify trends.
+* Demographic data to look for areas most attractive to young professionals, the elderly and families.
+* King County economic data to assess real estate price sensitivity through the business cycle.
+* How each school disctrict impacts the relative value of real estate.
+* Proposals to address affordable housing and gentrification issues.
 
 
 
